@@ -13,8 +13,8 @@ def opcao_user():
     print("🤓 [5] -> Conversor de Temperatura [✅]")
     print("🤓 [6] -> Real para Dolar [✅]")
     print("🤓 [7] -> Descobrir idade [✅]")
-    print("🤓 [8] -> Sair [✅]")
-    print("🤓 [9] -> Jogo de adivinhação [✅]")
+    print("🤓 [8] -> Jogo de adivinhação [✅]")
+    print("🤓 [9] -> Sair [✅]")
     print("=============================")
 
     # onde o usuário escolhe a opção
