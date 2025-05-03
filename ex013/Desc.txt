@@ -54,7 +54,12 @@ Converte valores de Real para Dólar com base em uma cotação fornecida pelo us
 Calcula a idade do usuário com base no ano de nascimento e o ano atual.
 
 -----------------------------------------------
-🔹 [8] Sair
+🔹 [8] Jogo de Adivinhação
+-----------------------------------------------
+Este programa sorteia um número aleatório entre 1 e 100 e pede para o usuário adivinhar qual é. A cada tentativa, o jogo dá uma dica dizendo se o palpite foi muito alto ou muito baixo, até que o número correto seja descoberto. O loop continua até o usuário acertar.
+
+-----------------------------------------------
+🔹 [9] Sair
 -----------------------------------------------
 Encerra o programa com confirmação.
 
@@ -76,4 +81,4 @@ básicas em Python.
 ===============================================
 - Nome: [Diogo]
 - GitHub: [https://github.com/1DiogoRG]
-
+- Instagram: [https://www.instagram.com/dio.crazy9/?igsh=MTMyN212ZWZnOXJvNg%3D%3D#]

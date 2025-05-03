@@ -14,6 +14,7 @@ def opcao_user():
     print("🤓 [6] -> Real para Dolar [✅]")
     print("🤓 [7] -> Descobrir idade [✅]")
     print("🤓 [8] -> Sair [✅]")
+    print("🤓 [9] -> Jogo de adivinhação [✅]")
     print("=============================")
 
     # onde o usuário escolhe a opção
@@ -179,8 +180,24 @@ def opcao_user():
         idade = ano_atual - ano_nasceu
         print(f"\n{nome} você nasceu em {ano_nasceu} e tem extamente: {idade} anos")
 
-    # opção - 8
-    elif opcao == "8": # sair com confirmação
+    elif opcao == "8":
+
+        import random
+        numeroSecreto = random.randint(1, 100)
+        tentativa = -1
+        print("Quero você tente advinhar o número de 1 e 100")
+
+        while tentativa != numeroSecreto:
+            tentativa = int(input("Qual seu palpite?👀 "))
+            if tentativa < numeroSecreto:
+                print("Muito baixo")
+            elif tentativa > numeroSecreto:
+                print("Muito alto")
+            else:
+                print("Você acertou")
+
+    # opção - 9
+    elif opcao == "9": # sair com confirmação
         print("===-- Sair --===")
 
         # loop até o usuário dar resposta válida
