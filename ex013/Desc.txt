@@ -1,0 +1,79 @@
+===============================================
+📌 PROJETO: MENU INTERATIVO EM PYTHON
+===============================================
+
+Este projeto consiste em um menu interativo no terminal criado com a linguagem Python. 
+O objetivo é fornecer diversas funcionalidades simples que ajudam a praticar a lógica 
+de programação, entrada e validação de dados e interação com o usuário.
+
+Cada opção do menu executa uma tarefa diferente:
+
+-----------------------------------------------
+🔹 [1] Loja
+-----------------------------------------------
+Realiza um cadastro completo com:
+- Validação de idade (maior de 18 anos)
+- Confirmação de senha
+- Validação de CPF
+- Coleta de dados pessoais como nome, e-mail e data de nascimento
+
+-----------------------------------------------
+🔹 [2] Escola
+-----------------------------------------------
+Simula o cadastro de um aluno com nome e idade.
+
+-----------------------------------------------
+🔹 [3] Calculadora
+-----------------------------------------------
+Permite realizar operações matemáticas:
+- Soma (+)
+- Subtração (-)
+- Multiplicação (*)
+- Divisão (/), com validação contra divisão por zero
+
+-----------------------------------------------
+🔹 [4] Ímpar ou Par
+-----------------------------------------------
+Verifica se o número informado é ímpar ou par.
+
+-----------------------------------------------
+🔹 [5] Conversor de Temperatura
+-----------------------------------------------
+Converte valores entre:
+- Celsius para Fahrenheit
+- Fahrenheit para Celsius
+
+-----------------------------------------------
+🔹 [6] Conversor de Moeda
+-----------------------------------------------
+Converte valores de Real para Dólar com base em uma cotação fornecida pelo usuário.
+
+-----------------------------------------------
+🔹 [7] Descobrir Idade
+-----------------------------------------------
+Calcula a idade do usuário com base no ano de nascimento e o ano atual.
+
+-----------------------------------------------
+🔹 [8] Sair
+-----------------------------------------------
+Encerra o programa com confirmação.
+
+===============================================
+📚 TECNOLOGIAS UTILIZADAS
+===============================================
+- Linguagem: Python 3
+- Editor: Visual Studio Code
+
+===============================================
+💡 OBJETIVO
+===============================================
+Este projeto foi criado com fins educativos, ideal para iniciantes em programação 
+que queiram praticar estruturas de controle, funções, entrada de dados e validações 
+básicas em Python.
+
+===============================================
+✅ AUTOR
+===============================================
+- Nome: [Diogo]
+- GitHub: [https://github.com/1DiogoRG]
+
