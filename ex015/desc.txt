@@ -1,0 +1,45 @@
+============================
+🐍 SNAKE JOGO EM PYTHON 🕹️
+============================
+
+📌 DESCRIÇÃO GERAL:
+Este projeto é um simples jogo da cobrinha (Snake) feito com a biblioteca Pygame, no qual o jogador controla uma cobra que cresce ao comer "comida" enquanto evita colidir com as bordas ou com o próprio corpo.
+
+🎮 FUNCIONAMENTO DO JOGO:
+- A cobrinha é controlada pelas teclas direcionais (setas do teclado).
+- A cada vez que a cobrinha come a comida (quadrado vermelho), ela cresce 1 unidade.
+- O jogo termina se a cobrinha:
+    - Bater nas paredes do jogo (bordas da janela).
+    - Colidir com ela mesma.
+
+🔧 CONFIGURAÇÕES INICIAIS:
+- Tamanho da tela: 600x400 pixels.
+- Tamanho dos blocos da cobrinha: 10x10 pixels.
+- Velocidade do jogo: 15 quadros por segundo (FPS).
+
+🎨 CORES:
+- Fundo: Preto (0, 0, 0)
+- Cobrinha: Verde (0, 255, 0)
+- Comida: Vermelho (255, 0, 0)
+
+🧠 LÓGICA DO JOGO:
+- A cobrinha é representada por uma lista de coordenadas.
+- O movimento é feito alterando as variáveis `x` e `y` com base na direção escolhida.
+- A comida aparece em posições aleatórias e, ao ser "comida", a cobrinha aumenta de tamanho.
+- O jogo usa um laço principal que:
+    1. Lê os eventos do teclado.
+    2. Atualiza a posição da cobrinha.
+    3. Detecta colisões.
+    4. Redesenha todos os elementos na tela.
+
+🔁 COMO REINICIAR:
+Atualmente, o jogo fecha ao perder. Para reiniciar, basta rodar o script novamente.
+
+📦 DEPENDÊNCIAS:
+- Python 3
+- Pygame (instale com `pip install pygame`)
+
+👨‍💻 AUTOR:
+Diogo Rodrigues, programador Python em evolução! 😉
+
+============================
