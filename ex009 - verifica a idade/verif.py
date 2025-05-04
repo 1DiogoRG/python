@@ -1,6 +1,6 @@
 def nome_idade():  
     nome = input("\ncomo se chama meu jovem: ")
-    idade = int(input("quantos anos você tem?: "))   
+    idade = int(input("quantos anos você tem? "))   
     if idade < 15:
         print("adolescente")
         return  
