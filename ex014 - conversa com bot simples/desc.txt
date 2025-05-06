@@ -1,0 +1,52 @@
+╔══════════════════════════════════════╗
+║         🤖 BOT SIMPLES EM PYTHON     ║
+╚══════════════════════════════════════╝
+
+📌 DESCRIÇÃO:
+Um bot interativo feito em Python para rodar diretamente no terminal, com respostas divertidas, animação de digitação, e até joguinhos clássicos! Ideal para treinar lógica e se divertir no processo.
+
+✨ FUNCIONALIDADES:
+────────────────────────────────────────────
+1️⃣  Interação com o Usuário
+    ▪️ Responde mensagens simples como "oi", "tudo bem", "qual seu nome", entre outras.
+
+2️⃣  Jogos Interativos
+    ▪️ *Adivinhação de Números:* o bot escolhe um número entre 1 e 100.
+    ▪️ *Pedra, Papel e Tesoura:* jogue contra o bot em uma partida clássica.
+
+3️⃣  Animação de Digitação
+    ▪️ As mensagens do bot aparecem como se estivessem sendo digitadas ao vivo!
+
+4️⃣  Cores & Estilo com Emojis
+    ▪️ O bot usa a biblioteca `colorama` para destacar frases com cores e incluir emojis 😄.
+
+5️⃣  Mensagens Personalizadas
+    ▪️ Homenagens, trechos de código, e uma pitada de humor fazem parte da conversa.
+
+🛠️ TECNOLOGIAS UTILIZADAS:
+────────────────────────────────────────────
+🐍 Python
+📦 colorama — para textos coloridos
+🎲 random — para decisões aleatórias nos jogos
+
+💬 EXEMPLO:
+────────────────────────────────────────────
+Você: oi  
+Bot: 🤖 Oi! Tudo bem com você?
+
+Você: jogar  
+Bot: 🤖 Ebaaa! Vamos jogar adivinhação!
+
+🎉 DICA:
+Você pode adaptar e expandir o bot com novas funcionalidades, como jogos adicionais ou conexão com APIs!
+
+📦 COMO USAR:
+────────────────────────────────────────────
+1. Instale o Python em seu sistema.
+2. Instale o colorama (se ainda não tiver):
+   ▸ `pip install colorama`
+3. Execute o script e interaja via terminal.
+
+════════════════════════════════════════════
+💻 Desenvolvido com carinho por Diogo Rodrigues
+════════════════════════════════════════════
