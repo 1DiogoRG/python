@@ -1,6 +1,7 @@
 import random
 import time
 import sys
+import datetime
 from colorama import init, Fore
 init(autoreset=True)
 
@@ -11,7 +12,7 @@ def digitar_mensagem(mensagem, atraso=0.04):
     print()
 
 def bot_simples():
-    digitar_mensagem("🤖  Olá! Eu sou um bot. Pode conversar comigo. (Digite 'sair' para encerrar)\n")
+    digitar_mensagem("🤖 Olá! Eu sou um bot. Pode conversar comigo. (Digite 'sair' para encerrar)\n")
 
     while True:
         usuario = input("\nVocê: ").lower()
@@ -87,6 +88,30 @@ def bot_simples():
                     else:
                         digitar_mensagem("🤖 Bot: Você perdeu!")
 
+        elif 'nome' in usuario:
+            digitar_mensagem("🤖 Bot: Qual seu nome?")
+            nome = input("Você: ").strip()
+            if nome:
+                digitar_mensagem(f"🤖 Bot: Muito prazer, {nome.capitalize()}! Como posso te ajudar hoje?")
+            else:
+                digitar_mensagem("🤖 Bot: Você não digitou um nome")
+        elif 'horas' in usuario or 'hora' in usuario:
+            agora = datetime.datetime.now().strftime("%H:%M")
+            digitar_mensagem(f"🤖 Bot: Agora são {agora}.")
+        elif 'conte uma piada' in usuario or 'piada' in usuario:
+            piadas = ["Por que o computador foi ao médico? Porque ele estava com um vírus!",
+                      "O que o zero disse para o oito? Belo cinto!",
+                      "Por que o livro de matemática se matou? Porque tinha muitos problemas..."
+                    ]
+            digitar_mensagem(f"🤖 Bot: {random.choice(piadas)}")
+        elif 'como você está' in usuario or 'tá bem' in usuario:
+            digitar_mensagem(f"🤖 Bot: Estou ótimo! Ainda mais agora conversando com você")
+        elif 'conselho' in usuario or 'motivação' in usuario:
+            conselhos = ["Nunca desista dos seus sonhos, mesmo que pareçam distantes",
+                         "Cada erro é uma chance de aprender algo novo",
+                         "Você é mais forte do que pensa!"
+                        ]
+            digitar_mensagem(f"🤖 Bot: {random.choice(conselhos)}")
         else:
             digitar_mensagem("🤖 Bot: Hmmm... não entendi. Pode tentar de outro jeito?")
 
