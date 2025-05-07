@@ -1,0 +1,21 @@
+Assistente de Voz em Python
+
+Este projeto é uma assistente virtual simples desenvolvida em Python. Ela reconhece comandos de voz em português, responde com fala e pode realizar ações básicas como:
+
+----------------------------------
+- Dizer as horas
+- Pesquisar no Google
+- Abrir o YouTube
+- Conversar de forma simples
+----------------------------------
+
+Tecnologias utilizadas:
+- speech_recognition
+- pyttsx3
+- datetime
+- webbrowser
+
+Para funcionar, é necessário instalar as bibliotecas com:
+    - `pip install speechrecognition pyttsx3 pyaudio` -
+
+Projeto ideal para iniciantes que desejam aprender a usar comandos de voz em Python.
