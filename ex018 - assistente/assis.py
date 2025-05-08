@@ -2,6 +2,9 @@ import speech_recognition as sr
 import pyttsx3
 import datetime
 import webbrowser
+import requests
+import pyautogui
+import time
 
 voz = pyttsx3.init()
 voz.setProperty('rate', 180)
@@ -29,6 +32,44 @@ def ouvir_comando():
             falar("Erro ao conectar com o serviço de voz.")
         return ""
 
+def previsão_tempo():
+    try:
+        resposta = requests.get("https://wttr.in/?format=3")
+        if resposta.status_code == 200:
+            falar(f"Previsão do tempo: {resposta.text}")
+        else:
+            falar("Não consegui obter a previsão do tempo.")
+    except:
+        falar("Erro ao acessar o serviço de clima.")
+
+def contar_piada():
+    piadas = [
+        "Por que o computador foi ao médico? Porque ele estava com um vírus!",
+        "Qual é o cúmulo da distração? Tentar afogar um peixe.",
+        "Por que o jacaré tirou o filho da escola? Porque ele réptil de ano!"
+    ]
+    import random
+    falar(random.choice(piadas))
+
+def anotar():
+    falar("O que você quer anotar?")
+    texto = ouvir_comando()
+    if texto:
+        with open("anotacoes.txt", "a", encoding="utf-8") as arquivo:
+            arquivo.write(texto + "\n")
+        falar("Anotação salva com sucesso.")
+
+def tocar_musica():
+    falar("Qual música você quer ouvir?")
+    musica = ouvir_comando()
+    if musica:
+        url = f"https://www.youtube.com/results?search_query={musica}"
+        webbrowser.open(url)
+        falar(f"Buscando {musica} no YouTube.")
+        time.sleep(3)
+        pyautogui.press("tab")  # Navega e simula clique (opcional)
+        pyautogui.press("enter")
+
 def assistente_voz():
     falar("Olá! Eu sou sua assistente de voz. O que você quer fazer hoje?")
 
@@ -53,6 +94,14 @@ def assistente_voz():
             webbrowser.open("https://www.youtube.com")
         elif "como você está" in comando:
             falar("Estou ótima! Obrigada por perguntar.")
+        elif "previsão do tempo" in comando or "tempo hoje" in comando:
+            previsão_tempo()
+        elif "conte uma piada" in comando or "me faça rir" in comando:
+            contar_piada()
+        elif "anotar" in comando or "criar anotação" in comando:
+            anotar()
+        elif "tocar música" in comando or "ouvir música" in comando:
+            tocar_musica()
         elif comando:
             falar("Desculpe, ainda não aprendi esse comando.")
 
