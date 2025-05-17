@@ -1,0 +1,37 @@
+=======================================
+📒 Projeto: Agenda Telefônica em Python
+=======================================
+
+🔧 Sobre:
+Este projeto é uma aplicação simples de terminal que simula uma agenda telefônica com salvamento de dados persistente utilizando arquivos JSON.
+
+🧠 Funcionalidades:
+- Adicionar novos contatos com nome e telefone.
+- Buscar contatos existentes pelo nome.
+- Listar todos os contatos salvos.
+- Armazenar e recuperar os dados automaticamente do arquivo "agenda.json".
+
+💾 Persistência de Dados:
+A agenda utiliza a biblioteca `json` para salvar os contatos em um arquivo local (`agenda.json`), permitindo que os dados não se percam mesmo após o programa ser encerrado.
+
+🎯 Objetivo:
+Exercitar os conceitos de:
+- Manipulação de arquivos
+- Dicionários em Python
+- Estruturas de repetição e decisão
+- Serialização com JSON
+- Criação de menus interativos via terminal
+
+🛠️ Como usar:
+1. Execute o programa.
+2. Escolha a opção desejada no menu:
+   - [1] para adicionar um novo contato.
+   - [2] para buscar um contato existente.
+   - [3] para listar todos os contatos.
+   - [4] para sair do programa.
+3. Os dados são automaticamente salvos após cada alteração.
+
+📁 Arquivo gerado:
+- `agenda.json`: armazena os dados da agenda em formato legível e reutilizável.
+
+Autor: [Diogo Rodrigues]
