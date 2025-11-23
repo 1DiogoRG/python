@@ -46,5 +46,4 @@ Este repositório será atualizado conforme eu for aprendendo novos conceitos e 
 
 ## 👨‍💻 Autor
 
-**Dio**  
-Estudante e entusiasta de tecnologia.
+**Diogo**
